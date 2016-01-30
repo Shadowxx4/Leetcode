@@ -1,0 +1,12 @@
+# f = lambda n: (n and n * f(n - 1)) or 1
+#	num = len(str(f(n)))-str(f(n)).find('0')
+# thats too much memory
+
+    if(n < 0): 
+      return -1
+    num = 0
+    while(n/5> 0):
+        n = n / 5
+        num += n
+    return num
+}
